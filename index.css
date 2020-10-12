@@ -1,0 +1,24 @@
+body {
+    background-color: #366141;
+}
+
+kbd {
+    border: solid gray;
+    border-width: 2px 2px;
+    width: 50px;
+    height: 150px;
+    background-color: white;
+
+}
+
+
+
+.container {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(7, 1fr);
+    max-width: 362px;
+    margin: 1px auto;
+    text-align: center;
+    margin-top: 250px;
+}
