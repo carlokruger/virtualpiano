@@ -55,3 +55,17 @@ Remember to include the CSS file in the HTML. Otherwise, all your style choices 
 
 #### Example 2: Example result after completing this stage
 ![piano](https://ucarecdn.com/c8e71ac9-d935-4423-8abb-e094a817071c/)
+
+## Stage 3/5: Application functionality
+### Description
+As good developers, we want our applications to be pretty. Yet it's not just the appearance that matters: functionality is also very important. To go through this stage, create a JavaScript file. In this file, write event handlers triggered when you press the seven keys you are working with: let the console print an individual message for each key. Your message should contain the key name enclosed in single quotes. For instance:
+
+```The 'A' key is pressed.```
+If some unbound key was pressed, a text should also appear in the console informing about this.
+
+Make sure you connect the external scripts to the HTML. Otherwise, the new functionality of the musical instrument will not be available.
+Check the result: the application should look the same, but now, eight different messages may appear in the console.
+
+### Objectives
+1. Create event handlers that, when you press the keys with the previously specified characters, will display messages to the console that they were pressed. Your message should contain the name of the key in single quotes.
+2. If any other key is pressed, display a warning to the console about it.
