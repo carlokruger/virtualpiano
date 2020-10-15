@@ -29,8 +29,8 @@ Use CSS to give your piano its unique design:
  * change the background of the web page: you can choose any color;
  * make the keys white (recommended for a classic piano look);
  * make sure that all piano keys are in the same row;
- * specify the key height and width. Sizes cannot be defined for inline <kbd> elements, so first you must change their type. There are several ways to do this. One of them is to set the display property with an inline-block value for all <kbd> tags — it will save the behavior of inline elements while allowing us to use some features that exist for block-level elements;
- * wrap all <kbd> tags in <div> with the container class and try to get rid of unnecessary indents;
+ * specify the key height and width. Sizes cannot be defined for inline kbd elements, so first you must change their type. There are several ways to do this. One of them is to set the display property with an inline-block value for all <kbd> tags — it will save the behavior of inline elements while allowing us to use some features that exist for block-level elements;
+ * wrap all kbd tags in div with the container class and try to get rid of unnecessary indents;
  * use the border property so that you can see the separation of the keys;
  * place the piano in the center of the screen;
  * optionally, you can center the captions of the keys horizontally by applying the text-align property with the center value to it.
@@ -69,3 +69,15 @@ Check the result: the application should look the same, but now, eight different
 ### Objectives
 1. Create event handlers that, when you press the keys with the previously specified characters, will display messages to the console that they were pressed. Your message should contain the name of the key in single quotes.
 2. If any other key is pressed, display a warning to the console about it.
+
+## Stage 4/5: Let there be music
+### Description
+Having keys that do not produce sound is certainly good, but it does not fully reflect the concept of musical instruments. Fortunately, this problem is easy to fix.
+
+Change the event handler so that when you press the A key, an audio object is created and played. You can use the [audio recordings](https://stepik.org/media/attachments/lesson/315625/white_keys.zip) we offer or specify yours. Check the result in a browser. Your piano has hopefully made its first sound!
+
+If you have problems playing audio recordings, try to specify the path to them relative to the HTML file.
+Perform this operation for the remaining six keys, and the stage will be considered complete.
+
+### Objectives
+1. Modify the event handlers so that <i>when you press the keys</i> instead of displaying messages in the console, <i>audio objects are created and played</i>.
