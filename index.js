@@ -1,7 +1,7 @@
 
 document.addEventListener('keydown', (e) =>{
     // console.log(e.key.toUpperCase());
-    const validKeys = ['A', 'S', 'D', 'F', 'G', 'H', 'J'];
+    const validKeys = ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'W', 'E', 'T', 'Y', 'U'];
     let pressedKey = e.key.toUpperCase();
     if(validKeys.includes(pressedKey)){
         switch(pressedKey){
@@ -32,6 +32,26 @@ document.addEventListener('keydown', (e) =>{
             case "J":
                 let J = new Audio("media/J.mp3");
                 J.play()
+                break;
+            case "W":
+                let W = new Audio("media/W.mp3");
+                W.play()
+                break;
+            case "E":
+                let E = new Audio("media/E.mp3");
+                E.play()
+                break;
+            case "T":
+                let T = new Audio("media/T.mp3");
+                T.play()
+                break;
+            case "Y":
+                let Y = new Audio("media/Y.mp3");
+                Y.play()
+                break;
+            case "U":
+                let U = new Audio("media/U.mp3");
+                U.play()
                 break;
         }
 

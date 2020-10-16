@@ -81,3 +81,37 @@ Perform this operation for the remaining six keys, and the stage will be conside
 
 ### Objectives
 1. Modify the event handlers so that <i>when you press the keys</i> instead of displaying messages in the console, <i>audio objects are created and played</i>.
+
+
+## Stage 5/5: Adding and styling new keys
+### Description
+If you have a feeling that something is still missing, you're right: a piano has more than just the white keys. Create five black keys at the HTML document body using the kbd paired tag and bind them to the [corresponding sounds](https://stepik.org/media/attachments/lesson/315625/black_keys.zip).
+
+Use letters W, E, T, Y, U for the black keys; position them approximately as they normally look on a real musical instrument.
+
+For this to succeed, you need to slightly change the code you've already written and add new styles, taking into account the following points:
+
+1. You already have the styles applied to the keys. To prevent conflict of existing and written properties in the future, wrap kbd responsible for white keys in the div tag with the white-keys class. Then you open the CSS file, fix the kbd selector to .white-keys kbd. Such a record means that it does not refer to tags, but only to tags that have the appropriate class. Check that the application didn't crash after editing the code and still displays the same view.
+2. Wrap your new five keys in div too, but with the class black-keys.
+3. New keys should be black. Do this by applying properties to the .black-keys kbd selector.
+4. Place the black keys on top of the white keys and resize the black keys, remembering to set the ```display``` property to ```inline-block``` value.
+Change the color of the letters that are responsible for your new keys. You can also change the font, size and formatting styles of the text if you want.
+Use class or id attributes for the keys to which you want to set unique styles. For example, the location styles.
+Congratulations, now you have a new project for your portfolio!
+
+The project is over, yet your ambitions ask for more? After passing this stage, you can continue to develop and improve the project yourself. If you wish, you can represent the corpus piano, add animation when pressing keys, increase the number of keys or alter the sounds emitted, because right now you only have one octave. You can also learn CSS Flexbox or CSS Grid, arrays, template literals and other JS features that will help make your code shorter, cleaner and more readable. Good luck!
+
+### Objectives
+1. Create 5 kbd tags at the end of the HTML document body that will be responsible for the black keys: W, E, T, Y, U.
+2. Create event handlers that play audio when keys with these characters are pressed.
+3. Wrap white keys in tag div with class white-keys. You must have one div tag with a white-keys class for all white keys.
+4. Wrap black keys in tag div with class black-keys. You must have one div tag with a black-keys class for all black keys.
+5. Set the black background color to the keys you created at this stage.
+6. Resize the black keys, remembering to set the display property to inline-block value.
+7. Change the location of the black keys using positioning properties. When trying to position elements, do not forget that there should be only five black keys at this stage.
+8. Change the color of the characters displayed on the black keys.
+
+### Examples
+#### Example 1: Example result after completing this stage
+![virtual piano](https://ucarecdn.com/f7a62af7-f136-470c-8aa6-06813e85342d/)
+

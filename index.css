@@ -2,25 +2,68 @@ body {
     background-color: #366141;
 }
 
-kbd {
-    border: 2px solid gray;
+.white-keys {
+
+    margin: 0;
+    padding: 0;
+    width: 380px;
+}
+
+.whitekey {
     width: 50px;
-    height: 150px;
-    background-color: white;
-    display: flex;
-    align-items: flex-end;
+    max-height: 150px;
+    border: 2px solid gray;
     justify-content: center;
+    z-index: 0;
+    display: inline-block;
+    background-color: white;
+    margin-right: -8px;
+    vertical-align: bottom;
+    padding-top: 150px;
+}
+
+.blackkey {
+    width: 25px;
+    max-height: 100px;
+    display: inline-block;
+    background-color: black;
+    padding-top: 100px;
 
 }
 
+.black-keys{
 
+    /*align-items: last;*/
+    justify-content: center;
+    z-index: 1;
+    color: white;
+    bottom: 0;
+    position: absolute;
+    top: 0px;
+    height: 100px;
+}
 
 .container {
+    width: 450px;
+    text-align: center;
+    margin: 250px auto 1px 500px;
+    z-index: 0;
+    position: absolute;
+
+}
+
+.black {
     display: grid;
     grid-gap: 1px;
     grid-template-columns: repeat(7, 1fr);
     max-width: 362px;
     text-align: center;
-    margin: 250px auto 1px;
+    margin: auto 1px;
+    z-index: 10;
+    position: absolute;
+    top: 250px;
+    margin-left: 537px;
+    margin-top: 10px;
+    vertical-align:bottom;
 
 }
